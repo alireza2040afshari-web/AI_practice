@@ -22,3 +22,18 @@ import matplotlib.pylab as plt
 #print(first_array , "*\n" , second_array)
 #third_array = np.concatenate([first_array,second_array] , axis= 1)
 #print(third_array)
+
+#1
+#final_mark_calculator
+
+midterm = np.array([14, 18, 12, 16, 10])
+final   = np.array([15, 17, 14, 18, 13])
+homework = np.array([20, 15, 18, 17, 16])
+
+def total_mark(first,socond,third):
+    
+    total = np.concatenate([first,socond,third],axis=0)
+    for number in total:
+
+    
+print(total_mark(midterm,final,homework))
