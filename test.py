@@ -43,9 +43,23 @@ def definer(total = np.array([])):
         index + 1
     return mark_list
     
+def claculator(mark_list = {},choose = ""):
+    index = 0
+    match choose:
+        case "midterm":
+            factor = 0.3
+        case "final":
+            factor = 0.5
+        case "homework":
+            factor = 0.2
 
+    for key in mark_list:
+        mark_list[key] = mark_list[key][index] * 0.3
+        value = value[index] * factor
+    return(mark_list)
+          
 
 total = total_mark(midterm,final,homework)
 print(total)
 print(definer(total))
-print(1)
+print(claculator(definer(total)))
