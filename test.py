@@ -34,5 +34,18 @@ def total_mark(first,socond,third):
     result = np.column_stack((midterm, final, homework))
     return(result)
 
+def definer(total = np.array([])):
+    name_list = ["ali","mamad","hasan","reza","amir"]
+    mark_list = {}
+    index = 0
+    for name in name_list:
+        mark_list[name] = total[index]
+        index + 1
+    return mark_list
     
-print(total_mark(midterm,final,homework))
+
+
+total = total_mark(midterm,final,homework)
+print(total)
+print(definer(total))
+print(1)
