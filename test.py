@@ -54,12 +54,12 @@ def claculator(mark_list = {},choose = ""):
             factor = 0.2
 
     for key in mark_list:
-        mark_list[key] = mark_list[key][index] * 0.3
-        value = value[index] * factor
+        mark_list[key] = mark_list[key][index] * factor
+        #value = value[index] * factor
     return(mark_list)
           
 
 total = total_mark(midterm,final,homework)
 print(total)
 print(definer(total))
-#print(claculator(definer(total)))
+print(claculator(definer(total), "midterm"))
