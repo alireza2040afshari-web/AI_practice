@@ -40,7 +40,7 @@ def definer(total = np.array([])):
     index = 0
     for name in name_list:
         mark_list[name] = total[index]
-        index + 1
+        index = index + 1
     return mark_list
     
 def claculator(mark_list = {},choose = ""):
@@ -62,4 +62,4 @@ def claculator(mark_list = {},choose = ""):
 total = total_mark(midterm,final,homework)
 print(total)
 print(definer(total))
-print(claculator(definer(total)))
+#print(claculator(definer(total)))
