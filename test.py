@@ -31,9 +31,8 @@ final   = np.array([15, 17, 14, 18, 13])
 homework = np.array([20, 15, 18, 17, 16])
 
 def total_mark(first,socond,third):
-    
-    total = np.concatenate([first,socond,third],axis=0)
-    for number in total:
+    result = np.column_stack((midterm, final, homework))
+    return(result)
 
     
 print(total_mark(midterm,final,homework))
